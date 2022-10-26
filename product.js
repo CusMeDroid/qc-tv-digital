@@ -61,7 +61,7 @@ fetch(url)
         hreff.setAttribute('title', 'Pre Order Sekarang ' + fullTit);
         hreff.innerHTML = 'Pre Order';
         hreff.setAttribute('class', 'padd-4 Trirong white size-16');
-        hreff.setAttribute('href', 'https://api.whatsapp.com/send?phone=6281932671715&text=Kapan%20merk%20' + fullTit + '%20tersedia?');
+        hreff.setAttribute('href', 'https://forms.gle/ius5GDxnpi9LcutRA');
         hreff.setAttribute('target', '_blank');
     } else {
         hreff.setAttribute('title', 'Beli Sekarang ' + fullTit);
