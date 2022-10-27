@@ -20,7 +20,13 @@
     right: 8px;
     top: 40%;
     background: white;
+    transition-duration: 0.5s;
 }
+.bubs:hover {
+    border: 2px solid #777;
+    color: #777;
+}
+
 /* Slideshow container */
 .slideshow-container {
     position: relative;
