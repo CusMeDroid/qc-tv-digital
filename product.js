@@ -54,7 +54,7 @@ fetch(url)
     elem.setAttribute('class', 'card-img hiframe');
     huah.innerHTML = fullTit;
     huah.setAttribute('class', 'black Audiowide padd-8');
-    desc.innerHTML = 'Rp.'+fullPrice + '<br>' + fullDes + '<br>' + '<b>Stok ' + fullStock + '</b>' + '<br>' + '<b>Terjual ' + fullSold + '</b>';
+    desc.innerHTML = 'Rp.'+fullPrice + '<br>' + fullDes + '<br>' + '<b>Stok ' + fullStock + '</b>'; //+ '<br>' + '<b>Terjual ' + fullSold + '</b>';
     desc.setAttribute('class', 'padd-8 Trirong');
     bbtn.setAttribute('class', 'Trirong green radius-20 blog-btn');
     if (fullStock == '0') {
