@@ -61,7 +61,7 @@ fetch(url)
         hreff.setAttribute('title', 'Pre Order Sekarang ' + fullTit);
         hreff.innerHTML = 'Pre Order';
         hreff.setAttribute('class', 'padd-4 Trirong white size-16');
-        hreff.setAttribute('href', 'https://forms.gle/ius5GDxnpi9LcutRA');
+        hreff.setAttribute('href', 'https://forms.gle/xPmaMBHPEQWt8D3v5');
         hreff.setAttribute('target', '_blank');
     } else {
         hreff.setAttribute('title', 'Beli Sekarang ' + fullTit);
