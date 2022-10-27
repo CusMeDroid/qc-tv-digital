@@ -1,0 +1,67 @@
+.black-bg-img {
+    background: url(https://cusmedroid.github.io/images/bg/black-bground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.hiframe {
+    border: 0;
+    overflow: hidden;
+}
+.bubs {
+    z-index: 2;
+    border: 2px solid #1d1d1d;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    padding-top: 12px;
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    right: 8px;
+    top: 40%;
+    background: white;
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+}
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.q-prev, .q-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the 'next button' to the right */
+.q-next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.q-prev:hover, .q-next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
