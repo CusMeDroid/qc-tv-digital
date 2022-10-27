@@ -1,6 +1,6 @@
 let url = 'https://docs.google.com/spreadsheets/d/1-9Fb7S5YtfD8quHJdESZlbiBemK_5qd3tSm4exlkAog/gviz/tq?';
 const lkjs = document.querySelector('.lkjs');
-const query = encodeURIComponent('Select B,C,D,E,F,G,H');
+const query = encodeURIComponent('Select B,C,D,E,F,G');
 console.log(query);
 url = url + '&tq=' + query;
 
@@ -24,15 +24,12 @@ fetch(url)
     const pricena = main.c[4];
     console.log(main.c[5]);
     const stockna = main.c[5];
-    console.log(main.c[6]);
-    const soldna = main.c[6];
     const fullLink = imgna.v;
     const fullTit = titlena.v;
     const fullDes = descna.v;
     const fullHref = linkna.v;
     const fullPrice = pricena.v;
     const fullStock = stockna.v;
-    const fullSold = soldna.v;
     console.log(fullLink);
     const column = document.createElement('div');
     const card = document.createElement('div');
@@ -54,7 +51,7 @@ fetch(url)
     elem.setAttribute('class', 'card-img hiframe');
     huah.innerHTML = fullTit;
     huah.setAttribute('class', 'black Audiowide padd-8');
-    desc.innerHTML = 'Rp.'+fullPrice + '<br>' + fullDes + '<br>' + '<b>Stok ' + fullStock + '</b>'; //+ '<br>' + '<b>Terjual ' + fullSold + '</b>';
+    desc.innerHTML = 'Rp.'+fullPrice + '<br>' + fullDes + '<br>' + '<b>Stok ' + fullStock + '</b>';
     desc.setAttribute('class', 'padd-8 Trirong');
     bbtn.setAttribute('class', 'Trirong green radius-20 blog-btn');
     if (fullStock == '0') {
