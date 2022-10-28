@@ -20,6 +20,22 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = 'block';
 }
 
+var slideIndex2 = 1;
+showSlides2();
+  
+function showSlides2() {
+    var qik;
+    var slides = document.getElementsByClassName('mySlides');
+    for (qik = 0; qik < slides.length; qik++) {
+      slides[qik].style.display = 'none';  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+    
+    slides[slideIndex2-1].style.display = 'block';  
+    setTimeout(showSlides2, 5000); // Change image every 5 seconds
+}
+
 let kmurl = 'https://docs.google.com/spreadsheets/d/166qN52LTkPiIjhktPsQMr2HAc5LziQsnsTJhWV4GTd0/gviz/tq?';
 const kmn = document.querySelector('.kmn');
 const kmquery = encodeURIComponent('Select B,C,D');
