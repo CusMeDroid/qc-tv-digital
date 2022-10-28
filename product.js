@@ -51,7 +51,13 @@ fetch(url)
     elem.setAttribute('class', 'card-img hiframe');
     huah.innerHTML = fullTit;
     huah.setAttribute('class', 'black Audiowide padd-8');
-    desc.innerHTML = 'Rp.'+fullPrice + '<br>' + fullDes + '<br>' + '<b>Stok ' + fullStock + '</b>';
+    
+    const numb = fullPrice;
+    const format = numb.toString().split('').reverse().join('');
+    const convert = format.match(/\d{1,3}/g);
+    const rupiah = convert.join('.').split('').reverse().join('');    
+    
+    desc.innerHTML = 'Rp.'+rupiah + '<br>' + fullDes + '<br>' + '<b>Stok ' + fullStock + '</b>';
     desc.setAttribute('class', 'padd-8 Trirong');
     bbtn.setAttribute('class', 'Trirong green radius-20 blog-btn');
     if (fullStock == '0') {
@@ -64,7 +70,7 @@ fetch(url)
         hreff.setAttribute('title', 'Beli Sekarang ' + fullTit);
         hreff.innerHTML = 'Beli';
         hreff.setAttribute('class', 'padd-4 Trirong white size-16');
-        hreff.setAttribute('href', fullHref + fullTit + '%0AHarga%20Rp.' + fullPrice + '%0AKirim%20ke%20alamat%20:%20*Isi Alamat Kamu.*%0A%0ATerimakasih%20:).');
+        hreff.setAttribute('href', fullHref + fullTit + '%0AHarga%20Rp.' + rupiah + '%0AKirim%20ke%20alamat%20:%20*Isi Alamat Kamu.*%0A%0ATerimakasih%20:).');
         hreff.setAttribute('target', '_blank');
     }
 
