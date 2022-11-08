@@ -92,6 +92,23 @@ q {font-style: italic;}
   padding: 10px;
 }
 
+/* New promo */
+#mpromo {
+    overflow: auto;
+}
+#promo {
+    width: 1440px;
+}
+
+.me-promo {
+    width: 700px;
+    height: 394px;
+    border-radius: 20px;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
 @media screen and (max-width: 800px) {
     .jnsbd {
       transition: 0.5s;
@@ -100,5 +117,16 @@ q {font-style: italic;}
       border-radius: 0px;
       background: white;
       padding: 10px;
+    }
+    #promo {
+        width: 840px;
+    }
+    .me-promo {
+        width: 400px;
+        height: 225px;
+        border-radius: 20px;
+        margin: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.5s;
     }
 }
