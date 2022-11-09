@@ -94,6 +94,7 @@ q {font-style: italic;}
 
 /* New promo */
 #mpromo {
+    background-color: #FFF;
     overflow: auto;
 }
 #promo {
