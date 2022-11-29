@@ -1,8 +1,8 @@
 let prurl = 'https://docs.google.com/spreadsheets/d/1VJl6LG031AZbAt0rzwqqy59-Rgo-boNqffxrOpbp1qc/gviz/tq?';
 const promo = document.querySelector('.promo');
-const kmquery = encodeURIComponent('Select B,C,D');
-console.log(kmquery);
-prurl = prurl + '&tq=' + kmquery;
+const prmquery = encodeURIComponent('Select B,C,D');
+console.log(prmquery);
+prurl = prurl + '&tq=' + prmquery;
 
 fetch(prurl)
 .then(res => res.text())
